@@ -19,6 +19,7 @@ void *thread_func( void * not_used )
 	int p, q, r;	/* variables */
 
 	printf("Starting thread %d\n", (int)not_used);
+	printf("Starting thread GIT commit %d\n", (int)not_used);
 	sleep(1);
 	for ( i=1; i<100; i++ ) {
 		for ( j=1; j<10; j++ ) {
