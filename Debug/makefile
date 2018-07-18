@@ -23,10 +23,10 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: Test1CMultiEXEC
+all: Test1CMulti
 
 # Tool invocations
-Test1CMultiEXEC: $(OBJS) $(USER_OBJS)
+Test1CMulti: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
 	$(CC) $(TIMESTORM_LINKER_FLAGS) $(OBJS) $(USER_OBJS) $(LIBS)
@@ -35,7 +35,7 @@ Test1CMultiEXEC: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) Test1CMultiEXEC
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) Test1CMulti
 	-@echo ' '
 
 .PHONY: all clean dependents

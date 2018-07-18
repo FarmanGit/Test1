@@ -21,4 +21,4 @@ NM=/home/viky/timesys/nitrogen6x/toolchain/bin/armv7l-timesys-linux-gnueabihf-nm
 ################################################################################
  
  TIMESTORM_COMPILER_FLAGS = -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF 
- TIMESTORM_LINKER_FLAGS =-lpthread -o "Test1CMultiEXEC" 
+ TIMESTORM_LINKER_FLAGS =-lpthread -o "Test1CMulti" 
